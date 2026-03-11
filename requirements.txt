@@ -1,9 +1,9 @@
 pyTelegramBotAPI
 requests
 faker
-bs4
+beautifulsoup4
 PyJWT
 user-agent
 aiohttp
-beautifulsoup4
 lxml
+cloudscraper
