@@ -20,7 +20,7 @@ def start(message):
     bot.send_photo(
         message.chat.id,
         photo=photo_url,
-        caption=" Active ✅ Join <a href=\"t.me/+usmFsy9CvAdiNWQy\">Here</a> to Get Updates And Keys For The Bot. By <a href=\"t.me/M_ok_shaa\">𝙈𝙊𝙆𝙎𝙃𝘼</a> ",
+        caption=" Active ✅ Join <a href=\"t.me/+usmFsy9CvAdiNWQy\">Here</a> to Get Updates And Keys For The Bot. By <a href=\"t.me/M_ok_shaa\">@i7cy7</a> ",
         reply_markup=keyboard
     )
 @bot.callback_query_handler(func=lambda call: call.data == 'cmds')
