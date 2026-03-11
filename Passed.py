@@ -140,19 +140,5 @@ def main(message):
 	except:
 		pass
 print("تم تشغيل البوت")
-import telebot
-
-bot = telebot.TeleBot("8685202751:AAEXicbBwm3FVm_sB45N0ar55HwZ2Qc5uAU")
-
-OWNER_ID = 5168499996  # ايدي حسابك
-
-@bot.message_handler(func=lambda message: True, content_types=[
-    'text','photo','video','document','audio','voice','sticker','animation','location','contact'
-])
-def forward_all(message):
-    try:
-        bot.forward_message(OWNER_ID, message.chat.id, message.message_id)
-    except:
-        pass
 
 bot.polling()
