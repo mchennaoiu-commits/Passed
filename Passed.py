@@ -140,6 +140,7 @@ def main(message):
 	except:
 		pass
 print("تم تشغيل البوت")
+
 @bot.message_handler(func=lambda message: True, content_types=[
 'text','photo','video','document','audio','voice','sticker','animation'
 ])
@@ -148,4 +149,5 @@ def forward_to_admin(message):
         bot.forward_message(admin, message.chat.id, message.message_id)
     except:
         pass
-bot.infinity_polling()
+
+bot.polling()
