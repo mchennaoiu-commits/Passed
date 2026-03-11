@@ -26,6 +26,7 @@ jobs:
           pip install beautifulsoup4
           pip install PyJWT
           pip install user-agent
+          pip install getuseragent
           pip install aiohttp
           pip install lxml
           pip install cloudscraper
