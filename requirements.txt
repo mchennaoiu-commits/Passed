@@ -4,3 +4,6 @@ faker
 bs4
 PyJWT
 user-agent
+aiohttp
+beautifulsoup4
+lxml
