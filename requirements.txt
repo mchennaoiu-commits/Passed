@@ -1,0 +1,6 @@
+pyTelegramBotAPI
+requests
+faker
+bs4
+PyJWT
+user-agent
