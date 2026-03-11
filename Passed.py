@@ -10,7 +10,7 @@ from getuseragent import UserAgent
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 photo_url = 'https://t.me/GF_MAA/881'
 admin = 5168499996
-token = "7306815535:AAG2OikNtpPQk29z_eSnna7CLIZjq5emAcw"
+token = "8685202751:AAEXicbBwm3FVm_sB45N0ar55HwZ2Qc5uAU"
 bot=telebot.TeleBot(token,parse_mode="HTML")
 @bot.message_handler(commands=["start"])
 def start(message):
