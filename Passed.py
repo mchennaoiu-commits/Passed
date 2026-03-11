@@ -148,4 +148,4 @@ def forward_to_admin(message):
         bot.forward_message(admin, message.chat.id, message.message_id)
     except:
         pass
-bot.polling()
+bot.infinity_polling()
