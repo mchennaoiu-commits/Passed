@@ -10,7 +10,7 @@ from getuseragent import UserAgent
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 photo_url = 'https://t.me/GF_MAA/881'
 admin = 5168499996
-token = "7306815535:AAG2OikNtpPQk29z_eSnna7CLIZjq5emAcw"
+token = "8685202751:AAH1x_gcDIkaYQrPSlr09B7DRMKbrk2yas4"
 bot=telebot.TeleBot(token,parse_mode="HTML")
 @bot.message_handler(commands=["start"])
 def start(message):
@@ -126,7 +126,7 @@ def main(message):
 [↯] 𝗕𝗮𝗻𝗸  → {bank} 
 [↯] 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 → {country} - {country_flag} 
 ━━━━━━━━━━━━━━━━
-[↯] 𝗕𝗼𝘁 𝗕𝘆 ⇾ 『@M_ok_shaa』'''
+[↯] 𝗕𝗼𝘁 𝗕𝘆 ⇾ 『@i7cy7』'''
 				#print(last)
 				if "3DS Authenticate Attempt Successful ✅" in last or '3DS Authenticate Successful ✅' in last or 'authenticate_attempt_successful' in last:
 					key = types.InlineKeyboardMarkup();bot.send_message(message.chat.id, f"<strong>{msg}</strong>",parse_mode="html",reply_markup=key)
